@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RecipesApp</string>
+    <string name="title_search">Search</string>
+    <string name="title_supermarket">Supermarket</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_recipe">Recipe</string>
+    <string name="api_key_spoonacular">SPOON_KEY</string>
+    <string name="facebook_app_id">FB_KEY</string>
+    <string name="google_map_key">GOOGLE_MAP_KEY</string>
+    <string name="fb_login_protocol_scheme">FB_FB_KEY</string>
+    <string name="cloud_messaging">FIREBASE_KEY</string>
+
+</resources>

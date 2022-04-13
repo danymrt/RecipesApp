@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:backgroundTint="#ECDAA2"
+    android:id="@+id/recipe">
+
+    <!-- FFECAE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="51dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="43dp"
+                android:scaleX="3"
+                android:scaleY="1"
+                android:background="@drawable/flat_tasty_pizza_seamless_pattern_italian_fast_food_background_print_texture_254538_267"
+                android:alpha="0.75"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image"
+            android:layout_width="163dp"
+            android:layout_height="103dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="-40dp"
+            android:layout_marginTop="22dp"
+            android:adjustViewBounds="true" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/amita"
+                android:gravity="center"
+                android:text="Nome ricetta"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:autoSizeTextType="uniform"/>
+
+
+            <TextView
+                android:id="@+id/likes"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/like_button"
+                android:gravity="center"
+                android:text="234 " />
+
+            <android.widget.Button
+                android:id="@+id/fav_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_baseline_favorite_orange" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

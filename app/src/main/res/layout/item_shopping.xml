@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><!--XML implementation of Card Layout-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="-15dp"
+        android:orientation="horizontal">
+        <!--android:background="@drawable/ingredient_background"-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_ingredient"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:elevation="10dp"
+            android:src="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/idItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="2dp"
+            android:textSize="16dp"
+            android:padding="5dp"
+            android:text="Item Name" />
+
+        <!--
+        <ImageButton
+            android:id="@+id/idRemoveQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_baseline_remove_circle_outline_24"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="2dp"
+            android:padding="5dp"
+            app:layout_anchorGravity="center"
+            android:layout_marginBottom="2dp"/>
+
+        <ImageButton
+            android:id="@+id/idAddQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toStartOf="@+id/idRemoveQuantity"
+            android:background="@drawable/ic_baseline_add_circle_outline_24"
+            android:padding="5dp"
+            app:layout_anchorGravity="center" />-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

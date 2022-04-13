@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/nestedscrollview"
+    tools:context=".ui.recipe.RecipeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.recipe.RecipeActivity">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="348dp"
+            android:orientation="vertical">
+
+
+            <com.example.recipesapp.ui.view.SemiCircleView
+                android:id="@+id/semiCircleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:color="#E89770"
+                app:height="260dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image"
+                app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+                android:layout_width="163dp"
+                android:layout_height="103dp"
+                android:layout_marginBottom="110dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView_recipe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.088"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="120dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView_recipe"
+                app:layout_constraintStart_toEndOf="@+id/image"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/titlerecipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/amita"
+                    android:text="name recipe"
+                    android:textColor="#682F03"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"
+                    android:drawableEnd="@drawable/ic_baseline_access_time_24"
+                    android:text="45'"
+                    android:textColor="#682F03"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/calories"
+                    android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginTop="70dp" android:layout_marginStart="10dp" android:drawableEnd="@drawable/ic_baseline_calories_24" android:text="245" android:textColor="#682F03" android:gravity="center"/>
+                <TextView android:id="@+id/serving" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginTop="30dp" android:layout_marginStart="90dp" android:drawableEnd="@drawable/ic_baseline_people_outline_24" android:text="2" android:textColor="#682F03" android:gravity="center"/>
+
+                <android.widget.Button
+                    android:id="@+id/favourite"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/ic_baseline_favorite_shadow_24" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView_recipe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/aboutrecipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/amita"
+                    android:text="About Recipe"
+                    android:textColor="#682F03"
+                    android:textStyle="bold" />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:nestedScrollingEnabled="true">
+                    <TextView
+                        android:id="@+id/summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/amita"
+                        android:scrollbars="vertical"
+                        android:textColor="#682F03" />
+                </ScrollView>
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView android:id="@+id/cardView_recipe" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="250dp" android:layout_marginStart="35dp" android:layout_marginEnd="35dp" app:cardCornerRadius="10dp" app:layout_anchorGravity="center" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <com.google.android.material.appbar.AppBarLayout android:id="@+id/appBarLayout_recipe" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/viewPager_recipe" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayout_recipe" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabGravity="fill" app:tabIconTint="@color/colorAccent" app:tabIndicatorColor="@color/colorAccent" app:tabMode="fixed" app:tabPaddingEnd="0dp" app:tabPaddingStart="0dp" app:tabSelectedTextColor="@color/colorAccent" app:tabTextAppearance="?android:attr/textAppearanceSmall"/>
+                </com.google.android.material.appbar.AppBarLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@+id/viewPager_recipe" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <!-- android:nestedScrollingEnabled="true" -->
+    </LinearLayout>
+</ScrollView>

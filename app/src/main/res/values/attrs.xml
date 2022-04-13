@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SemiCircleView">
+        <attr name="height" format="dimension" />
+        <attr name="color" format="color" />
+        <attr name="image_shape" format="integer" />
+    </declare-styleable>
+</resources>
