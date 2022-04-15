@@ -9,5 +9,6 @@
     <string name="google_map_key">GOOGLE_MAP_KEY</string>
     <string name="fb_login_protocol_scheme">FB_FB_KEY</string>
     <string name="cloud_messaging">FIREBASE_KEY</string>
+    <string name="google_nearby_key">GOOGLE_NEARBY_KEY</string>
 
 </resources>
