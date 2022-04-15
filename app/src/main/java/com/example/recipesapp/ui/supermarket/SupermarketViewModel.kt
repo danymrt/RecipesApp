@@ -33,7 +33,7 @@ class SupermarketViewModel(application: Application) : AndroidViewModel(applicat
 
         val service = RetrofitBuilder.makeRetrofitService(url).create(GoogleMapApi::class.java)
         CoroutineScope(Dispatchers.IO).launch {
-            val response = service.getNearBy(location,500,"supermarket",true,"AIzaSyDLvsXiRi7J15WO9BDc-TJGZc2FtqSYEjc")
+            val response = service.getNearBy(location,500,"supermarket",true, R.string.google_nearby_key)
             withContext(Dispatchers.Main) {
                 if (response?.isSuccessful()!!) {
                     _resultSupermarket.value = response.body()!!.results
