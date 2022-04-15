@@ -62,7 +62,7 @@ Below there is a general overview of the entire application:
 ## Setting up
 For the setup of the project it will be necessary: 
 * Remove the database folder (if necessary: import the folder, by changing the data in the settings.py, in your account on PythonAnywhere)
-* Change all the keys needed for REST APIs calls in the string.xml file
+* Change all the keys needed for REST APIs calls in the strings.xml file
 * Create an account and manage services from the main websites of: [Google Map](https://console.cloud.google.com/), [Firebase Cloud Messaging and Firebase Realtime Database](https://firebase.google.com/)
 
 
